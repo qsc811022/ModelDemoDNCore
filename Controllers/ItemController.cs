@@ -27,5 +27,13 @@ namespace ModelDemoDNCore.Controllers
             
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Item obj)
+        {
+            _db.Item.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

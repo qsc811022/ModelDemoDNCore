@@ -29,9 +29,9 @@
                 @foreach (var Expense in Model)
                 {
                 <tr>
-                    <td width="30%">@Expense.ExpenseName</td>
-                    <td width="30%">@Expense.Amount</td>
-                    <td width="40%">
+                    <td width="35%">@Expense.ExpenseName</td>
+                    <td width="35%">@Expense.Amount</td>
+                    <td width="30%">
                         <div class="col-6 text-right">
                             <a asp-controller="Expense" asp-action="Update" asp-route-id="@Expense.Id" class="btn btn-primary">Update</a>
                             <a asp-controller="Expense" asp-action="Delete" asp-route-id="@Expense.Id" class="btn btn-primary">Delete</a>

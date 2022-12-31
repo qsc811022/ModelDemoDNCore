@@ -17,5 +17,7 @@ namespace ModelDemoDNCore.Data
 
         public DbSet<Item> Item { get;set;}
         public DbSet<Expense> Expenses { get; set; }
+
+        public DbSet<ExpenseType> ExpensesType { get; set; }
     }
 }
